@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador</title>
+</head>
+<body>
+    <h1>Sistemas de verificação</h1>
+    nacionalidade: <input type="text" name="txt" id="txt"> Nacionalidade <input type="button" value="Check" onclick="calcular()">
+<div id="res">
+
+</div>
+    <script>
+        
+        function calcular () {
+            var txt = document.querySelector('input#txt')
+            var res = document.querySelector ('div#res')
+                         // var txtv = document.getElementById('txtvel')
+                            //  var res = document.getElementById ('res')
+                            // getElementById irá buscar somente pela id
+            var txt = String(txt.value)
+            res.innerHTML = ` você é do país ${res} `
+            if (txt == Brazil) {
+               res.innerHTML = ` aaa `
+            }else {
+                res.innerHTML = `a `
+            }            
+                
+            }
+    </script>
+</body>
+</html>

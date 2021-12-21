@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando DOM</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Utilizando DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Testes utilizando <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+     var p1 = window.document.getElementsByTagName('p') [0] 
+     //primeiro paragrafo, se quiser o prox paragrafo use [1]
+     window.document.write(' Está escrito assim: ' + p1.innerText) 
+     p1.style.color = 'blue'
+    document.write(p1.innerHTML)
+    
+    var d = window.document.querySelector('#msg')
+    d.style.background = 'blue'
+    
+    // Ou--------------------------------------
+    //var d = document.getElementById('msg')
+    //d.style.background = 'green'
+    //d.innerText = 'Estou aguardando...'
+    //-----------------------------------------
+
+     
+     //innerText o texto que esta dentro do primeiro parágrafo
+     // da pra selecionar partes do html com JS alterando as settings
+    </script>
+</body>
+</html>
